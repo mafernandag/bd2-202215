@@ -48,7 +48,23 @@
                 "oldName": "nombre"
               }
             ],
-            "foreignKeys": [],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_empresa_registra_1",
+                "fields": [
+                  "id_empresa",
+                  "id_empresa"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "registra",
+                "referencedFields": [],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
             "indexes": [],
             "uniques": [],
             "primaryKey": {
@@ -103,7 +119,53 @@
                 "oldName": "salario"
               }
             ],
-            "foreignKeys": [],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_vacante_registra_1",
+                "fields": [
+                  "id_cargo",
+                  "id_cargo"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "registra",
+                "referencedFields": [],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_vacante_se_postula_1",
+                "fields": [
+                  "id_cargo",
+                  "id_cargo"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "se_postula",
+                "referencedFields": [],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_vacante_habilidades_1",
+                "fields": [
+                  "id_cargo",
+                  "id_cargo"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "habilidades",
+                "referencedFields": [],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
             "indexes": [],
             "uniques": [],
             "primaryKey": {
@@ -194,6 +256,65 @@
                 "oldName": "telefono"
               }
             ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_candidato_habilidades_1",
+                "fields": [
+                  "cedula",
+                  "cedula"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "habilidades",
+                "referencedFields": [],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "cedula"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "registra",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_empresa",
+                "type": "CHAR VARYING",
+                "length": 8,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_empresa"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_cargo",
+                "type": "CHAR VARYING",
+                "length": 8,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_cargo"
+              }
+            ],
             "foreignKeys": [],
             "indexes": [],
             "uniques": [],
@@ -201,6 +322,67 @@
               "objectType": "PrimaryKey_LOGICAL",
               "name": "",
               "fields": [
+                "id_empresa",
+                "id_cargo"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "se_postula",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_cargo",
+                "type": "CHAR VARYING",
+                "length": 8,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_cargo"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "cedula",
+                "type": "CHAR VARYING",
+                "length": 8,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "cedula"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_se_postula_candidato_1",
+                "fields": [
+                  "cedula",
+                  "cedula"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "candidato",
+                "referencedFields": [],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "id_cargo",
                 "cedula"
               ],
               "oldName": ""
@@ -235,6 +417,30 @@
                 "defaultValue": "",
                 "comment": "",
                 "oldName": "descripcion"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "id_cargo",
+                "type": "CHAR VARYING",
+                "length": 8,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "id_cargo"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "cedula",
+                "type": "CHAR VARYING",
+                "length": 8,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "cedula"
               }
             ],
             "foreignKeys": [],
@@ -271,8 +477,8 @@
           "type": "table",
           "schemaName": "Default",
           "tableName": "empresa",
-          "x": 110,
-          "y": 90,
+          "x": 40,
+          "y": 270,
           "width": 220,
           "height": 100,
           "isBold": false,
@@ -287,8 +493,8 @@
           "type": "table",
           "schemaName": "Default",
           "tableName": "vacante",
-          "x": 590,
-          "y": 90,
+          "x": 580,
+          "y": 260,
           "width": 200,
           "height": 120,
           "isBold": false,
@@ -303,8 +509,8 @@
           "type": "table",
           "schemaName": "Default",
           "tableName": "candidato",
-          "x": 100,
-          "y": 280,
+          "x": 840,
+          "y": 30,
           "width": 200,
           "height": 170,
           "isBold": false,
@@ -319,10 +525,42 @@
           "type": "table",
           "schemaName": "Default",
           "tableName": "habilidades",
-          "x": 530,
-          "y": 260,
+          "x": 840,
+          "y": 250,
           "width": 220,
-          "height": 100,
+          "height": 140,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "registra",
+          "x": 320,
+          "y": 270,
+          "width": 200,
+          "height": 90,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "se_postula",
+          "x": 580,
+          "y": 70,
+          "width": 200,
+          "height": 90,
           "isBold": false,
           "titleColor": {
             "r": 55,
@@ -333,7 +571,212 @@
         }
       ],
       "layers": [],
-      "relations": [],
+      "relations": [
+        {
+          "name": "fk_empresa_registra_1",
+          "sourceTableName": "empresa",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 275,
+              "y": 320
+            },
+            {
+              "x": 305,
+              "y": 320
+            }
+          ],
+          "label": {
+            "x": 271,
+            "y": 322,
+            "width": 151,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_vacante_registra_1",
+          "sourceTableName": "vacante",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 565,
+              "y": 320
+            },
+            {
+              "x": 535,
+              "y": 320
+            }
+          ],
+          "label": {
+            "x": 429,
+            "y": 272,
+            "width": 146,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_vacante_se_postula_1",
+          "sourceTableName": "vacante",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 680,
+              "y": 245
+            },
+            {
+              "x": 680,
+              "y": 175
+            }
+          ],
+          "label": {
+            "x": 688,
+            "y": 255,
+            "width": 166,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_se_postula_candidato_1",
+          "sourceTableName": "se_postula",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 795,
+              "y": 120
+            },
+            {
+              "x": 825,
+              "y": 120
+            }
+          ],
+          "label": {
+            "x": 607,
+            "y": 72,
+            "width": 178,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_candidato_habilidades_1",
+          "sourceTableName": "candidato",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 940,
+              "y": 215
+            },
+            {
+              "x": 940,
+              "y": 235
+            }
+          ],
+          "label": {
+            "x": 942,
+            "y": 155,
+            "width": 182,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_vacante_habilidades_1",
+          "sourceTableName": "vacante",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 795,
+              "y": 320
+            },
+            {
+              "x": 825,
+              "y": 320
+            }
+          ],
+          "label": {
+            "x": 785,
+            "y": 272,
+            "width": 170,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
       "viewRelations": []
     }
   ]
