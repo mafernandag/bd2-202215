@@ -1,0 +1,1899 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "Default",
+  "server": {
+    "objectType": "Server_MYSQL",
+    "name": "Default",
+    "serverVersion": 80099,
+    "edition": "Default",
+    "lowerCaseTableNames": 0,
+    "schemas": [
+      {
+        "objectType": "Schema_MYSQL",
+        "name": "Default",
+        "tables": [],
+        "views": []
+      },
+      {
+        "objectType": "Schema_MYSQL",
+        "name": "bd2_202215_28162752",
+        "tables": [
+          {
+            "objectType": "Table_MYSQL",
+            "name": "candidato",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "candidato",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 20:42:32",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 4,
+            "updateTime": "2021-10-27 20:44:53",
+            "DDL": "CREATE TABLE `candidato` (\n  `cedula` varchar(8) NOT NULL,\n  `nombre` varchar(30) NOT NULL,\n  `edad` int(11) NOT NULL,\n  `direccion` varchar(80) NOT NULL,\n  `genero` char(1) NOT NULL,\n  `telefono` varchar(12) NOT NULL,\n  PRIMARY KEY (`cedula`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "cedula",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "cedula"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "nombre",
+                "type": "varchar",
+                "length": 30,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "nombre"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "edad",
+                "type": "int",
+                "length": 11,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "edad"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "direccion",
+                "type": "varchar",
+                "length": 80,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "direccion"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "genero",
+                "type": "char",
+                "length": 1,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "genero"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "telefono",
+                "type": "varchar",
+                "length": 12,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "telefono"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "cedula",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "cedula"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "empresa",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "empresa",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 20:25:15",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 4,
+            "updateTime": "2021-10-27 20:25:47",
+            "DDL": "CREATE TABLE `empresa` (\n  `id_empresa` varchar(8) NOT NULL,\n  `nombre` varchar(30) NOT NULL,\n  PRIMARY KEY (`id_empresa`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_empresa",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_empresa"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "nombre",
+                "type": "varchar",
+                "length": 30,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "nombre"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_empresa",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_empresa"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "habilidad_requerida",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "habilidad_requerida",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 21:24:22",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 16384,
+            "maxDataLength": 0,
+            "rows": 4,
+            "updateTime": "2021-10-27 21:26:08",
+            "DDL": "CREATE TABLE `habilidad_requerida` (\n  `id_cargo` varchar(8) NOT NULL,\n  `id_habilidad` varchar(8) NOT NULL,\n  PRIMARY KEY (`id_cargo`,`id_habilidad`),\n  KEY `fk_habilidades` (`id_habilidad`),\n  CONSTRAINT `fk_habilidades` FOREIGN KEY (`id_habilidad`) REFERENCES `habilidades` (`id_habilidad`) ON UPDATE CASCADE,\n  CONSTRAINT `fk_vacante_habilidad_requerida_1` FOREIGN KEY (`id_cargo`) REFERENCES `vacante` (`id_cargo`) ON UPDATE CASCADE\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_cargo",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_cargo"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_habilidad",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_habilidad"
+              }
+            ],
+            "indexes": [
+              {
+                "objectType": "Index_MYSQL",
+                "name": "fk_habilidades",
+                "type": "NORMAL",
+                "method": "BTREE",
+                "comment": "",
+                "oldName": "fk_habilidades",
+                "online": false,
+                "keyBlockSize": 0,
+                "parser": "",
+                "algorithm": "",
+                "lock": "",
+                "collation": "A",
+                "cardinality": "4",
+                "packed": "",
+                "fields": [
+                  {
+                    "objectType": "IndexField_MYSQL",
+                    "name": "id_habilidad",
+                    "keyLength": 0,
+                    "order": "",
+                    "oldName": "id_habilidad"
+                  }
+                ]
+              }
+            ],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_cargo",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_cargo"
+                },
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_habilidad",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_habilidad"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_vacante_habilidad_requerida_1",
+                "fields": [
+                  "id_cargo"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "vacante",
+                "referenceFields": [
+                  "id_cargo"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_vacante_habilidad_requerida_1"
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_habilidades",
+                "fields": [
+                  "id_habilidad"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "habilidades",
+                "referenceFields": [
+                  "id_habilidad"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_habilidades"
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "habilidades",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "habilidades",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 21:18:44",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 32768,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 3,
+            "updateTime": "2021-10-27 21:23:26",
+            "DDL": "CREATE TABLE `habilidades` (\n  `id_habilidad` varchar(8) NOT NULL,\n  `descripcion` varchar(50) NOT NULL,\n  PRIMARY KEY (`id_habilidad`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_habilidad",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_habilidad"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "descripcion",
+                "type": "varchar",
+                "length": 50,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "descripcion"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_habilidad",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_habilidad"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "posee_habilidad",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "posee_habilidad",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 21:25:06",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 16384,
+            "maxDataLength": 0,
+            "rows": 4,
+            "updateTime": "2021-10-27 21:27:33",
+            "DDL": "CREATE TABLE `posee_habilidad` (\n  `cedula` varchar(8) NOT NULL,\n  `id_habilidad` varchar(8) NOT NULL,\n  PRIMARY KEY (`cedula`,`id_habilidad`),\n  KEY `fk_posee_habilidad` (`id_habilidad`),\n  CONSTRAINT `fk_candidato_habilidades_1` FOREIGN KEY (`cedula`) REFERENCES `candidato` (`cedula`) ON UPDATE CASCADE,\n  CONSTRAINT `fk_posee_habilidad` FOREIGN KEY (`id_habilidad`) REFERENCES `habilidades` (`id_habilidad`) ON UPDATE CASCADE\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "cedula",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "cedula"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_habilidad",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_habilidad"
+              }
+            ],
+            "indexes": [
+              {
+                "objectType": "Index_MYSQL",
+                "name": "fk_posee_habilidad",
+                "type": "NORMAL",
+                "method": "BTREE",
+                "comment": "",
+                "oldName": "fk_posee_habilidad",
+                "online": false,
+                "keyBlockSize": 0,
+                "parser": "",
+                "algorithm": "",
+                "lock": "",
+                "collation": "A",
+                "cardinality": "4",
+                "packed": "",
+                "fields": [
+                  {
+                    "objectType": "IndexField_MYSQL",
+                    "name": "id_habilidad",
+                    "keyLength": 0,
+                    "order": "",
+                    "oldName": "id_habilidad"
+                  }
+                ]
+              }
+            ],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "cedula",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "cedula"
+                },
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_habilidad",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_habilidad"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_candidato_habilidades_1",
+                "fields": [
+                  "cedula"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "candidato",
+                "referenceFields": [
+                  "cedula"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_candidato_habilidades_1"
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_posee_habilidad",
+                "fields": [
+                  "id_habilidad"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "habilidades",
+                "referenceFields": [
+                  "id_habilidad"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_posee_habilidad"
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "registra",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "registra",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 20:29:22",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 32768,
+            "maxDataLength": 0,
+            "rows": 5,
+            "updateTime": "2021-10-27 20:38:39",
+            "DDL": "CREATE TABLE `registra` (\n  `id_empresa` varchar(8) NOT NULL,\n  `id_cargo` varchar(8) NOT NULL,\n  PRIMARY KEY (`id_empresa`,`id_cargo`),\n  KEY `id_cargo` (`id_cargo`),\n  KEY `id_empresa` (`id_empresa`),\n  CONSTRAINT `fk_empresa_registra_1` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id_empresa`) ON UPDATE CASCADE,\n  CONSTRAINT `fk_vacante_registra_1` FOREIGN KEY (`id_cargo`) REFERENCES `vacante` (`id_cargo`) ON UPDATE CASCADE\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_empresa",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_empresa"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_cargo",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_cargo"
+              }
+            ],
+            "indexes": [
+              {
+                "objectType": "Index_MYSQL",
+                "name": "id_cargo",
+                "type": "NORMAL",
+                "method": "BTREE",
+                "comment": "",
+                "oldName": "id_cargo",
+                "online": false,
+                "keyBlockSize": 0,
+                "parser": "",
+                "algorithm": "",
+                "lock": "",
+                "collation": "A",
+                "cardinality": "5",
+                "packed": "",
+                "fields": [
+                  {
+                    "objectType": "IndexField_MYSQL",
+                    "name": "id_cargo",
+                    "keyLength": 0,
+                    "order": "",
+                    "oldName": "id_cargo"
+                  }
+                ]
+              },
+              {
+                "objectType": "Index_MYSQL",
+                "name": "id_empresa",
+                "type": "NORMAL",
+                "method": "BTREE",
+                "comment": "",
+                "oldName": "id_empresa",
+                "online": false,
+                "keyBlockSize": 0,
+                "parser": "",
+                "algorithm": "",
+                "lock": "",
+                "collation": "A",
+                "cardinality": "5",
+                "packed": "",
+                "fields": [
+                  {
+                    "objectType": "IndexField_MYSQL",
+                    "name": "id_empresa",
+                    "keyLength": 0,
+                    "order": "",
+                    "oldName": "id_empresa"
+                  }
+                ]
+              }
+            ],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_empresa",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_empresa"
+                },
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_cargo",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_cargo"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_empresa_registra_1",
+                "fields": [
+                  "id_empresa"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "empresa",
+                "referenceFields": [
+                  "id_empresa"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_empresa_registra_1"
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_vacante_registra_1",
+                "fields": [
+                  "id_cargo"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "vacante",
+                "referenceFields": [
+                  "id_cargo"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_vacante_registra_1"
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "se_postula",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "se_postula",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 20:32:29",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 32768,
+            "maxDataLength": 0,
+            "rows": 4,
+            "updateTime": "2021-10-27 20:46:02",
+            "DDL": "CREATE TABLE `se_postula` (\n  `id_cargo` varchar(8) NOT NULL,\n  `cedula` varchar(8) NOT NULL,\n  PRIMARY KEY (`id_cargo`,`cedula`),\n  KEY `id_cargo` (`id_cargo`),\n  KEY `fk_se_postula_candidato_1` (`cedula`),\n  CONSTRAINT `fk_se_postula_candidato_1` FOREIGN KEY (`cedula`) REFERENCES `candidato` (`cedula`) ON UPDATE CASCADE,\n  CONSTRAINT `fk_vacante_se_postula_1` FOREIGN KEY (`id_cargo`) REFERENCES `vacante` (`id_cargo`) ON UPDATE CASCADE\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_cargo",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_cargo"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "cedula",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "cedula"
+              }
+            ],
+            "indexes": [
+              {
+                "objectType": "Index_MYSQL",
+                "name": "fk_se_postula_candidato_1",
+                "type": "NORMAL",
+                "method": "BTREE",
+                "comment": "",
+                "oldName": "fk_se_postula_candidato_1",
+                "online": false,
+                "keyBlockSize": 0,
+                "parser": "",
+                "algorithm": "",
+                "lock": "",
+                "collation": "A",
+                "cardinality": "4",
+                "packed": "",
+                "fields": [
+                  {
+                    "objectType": "IndexField_MYSQL",
+                    "name": "cedula",
+                    "keyLength": 0,
+                    "order": "",
+                    "oldName": "cedula"
+                  }
+                ]
+              },
+              {
+                "objectType": "Index_MYSQL",
+                "name": "id_cargo",
+                "type": "NORMAL",
+                "method": "BTREE",
+                "comment": "",
+                "oldName": "id_cargo",
+                "online": false,
+                "keyBlockSize": 0,
+                "parser": "",
+                "algorithm": "",
+                "lock": "",
+                "collation": "A",
+                "cardinality": "4",
+                "packed": "",
+                "fields": [
+                  {
+                    "objectType": "IndexField_MYSQL",
+                    "name": "id_cargo",
+                    "keyLength": 0,
+                    "order": "",
+                    "oldName": "id_cargo"
+                  }
+                ]
+              }
+            ],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_cargo",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_cargo"
+                },
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "cedula",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "cedula"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_se_postula_candidato_1",
+                "fields": [
+                  "cedula"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "candidato",
+                "referenceFields": [
+                  "cedula"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_se_postula_candidato_1"
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "fk_vacante_se_postula_1",
+                "fields": [
+                  "id_cargo"
+                ],
+                "referenceSchema": "bd2_202215_28162752",
+                "referenceTable": "vacante",
+                "referenceFields": [
+                  "id_cargo"
+                ],
+                "onDelete": "RESTRICT",
+                "onUpdate": "CASCADE",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk_vacante_se_postula_1"
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "vacante",
+            "comment": "",
+            "engine": "InnoDB",
+            "characterSet": "utf8mb4",
+            "collation": "utf8mb4_general_ci",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "Dynamic",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "vacante",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "2021-10-27 20:33:55",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 16384,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 4,
+            "updateTime": "2021-10-27 20:37:24",
+            "DDL": "CREATE TABLE `vacante` (\n  `id_cargo` varchar(8) NOT NULL,\n  `nombre_cargo` varchar(50) NOT NULL,\n  `salario` float NOT NULL,\n  PRIMARY KEY (`id_cargo`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_cargo",
+                "type": "varchar",
+                "length": 8,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_cargo"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "nombre_cargo",
+                "type": "varchar",
+                "length": 50,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "utf8mb4",
+                "collation": "utf8mb4_general_ci",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "nombre_cargo"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "salario",
+                "type": "float",
+                "length": 0,
+                "decimals": 0,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "salario"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_cargo",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": "id_cargo"
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "BTREE",
+              "comment": ""
+            },
+            "foreignKeys": [],
+            "triggers": [],
+            "tablePartitions": []
+          }
+        ],
+        "views": []
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "default",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "candidato",
+          "x": 480,
+          "y": 270,
+          "width": 163,
+          "height": 171,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "empresa",
+          "x": 50,
+          "y": 30,
+          "width": 171,
+          "height": 91,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "habilidad_requerida",
+          "x": 50,
+          "y": 640,
+          "width": 173,
+          "height": 91,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "habilidades",
+          "x": 470,
+          "y": 640,
+          "width": 176,
+          "height": 91,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "posee_habilidad",
+          "x": 480,
+          "y": 500,
+          "width": 173,
+          "height": 91,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "registra",
+          "x": 50,
+          "y": 170,
+          "width": 171,
+          "height": 91,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "se_postula",
+          "x": 270,
+          "y": 310,
+          "width": 153,
+          "height": 91,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "bd2_202215_28162752",
+          "tableName": "vacante",
+          "x": 30,
+          "y": 310,
+          "width": 193,
+          "height": 111,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "fk_habilidades",
+          "sourceTableName": "habilidad_requerida",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 238,
+              "y": 680
+            },
+            {
+              "x": 455,
+              "y": 680
+            }
+          ],
+          "label": {
+            "x": 234,
+            "y": 682,
+            "width": 98,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_candidato_habilidades_1",
+          "sourceTableName": "posee_habilidad",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 560,
+              "y": 485
+            },
+            {
+              "x": 560,
+              "y": 456
+            }
+          ],
+          "label": {
+            "x": 568,
+            "y": 495,
+            "width": 182,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_posee_habilidad",
+          "sourceTableName": "posee_habilidad",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 560,
+              "y": 606
+            },
+            {
+              "x": 560,
+              "y": 625
+            }
+          ],
+          "label": {
+            "x": 568,
+            "y": 581,
+            "width": 129,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_empresa_registra_1",
+          "sourceTableName": "registra",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 140,
+              "y": 155
+            },
+            {
+              "x": 140,
+              "y": 136
+            }
+          ],
+          "label": {
+            "x": 148,
+            "y": 150,
+            "width": 151,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_se_postula_candidato_1",
+          "sourceTableName": "se_postula",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 438,
+              "y": 360
+            },
+            {
+              "x": 465,
+              "y": 360
+            }
+          ],
+          "label": {
+            "x": 434,
+            "y": 362,
+            "width": 178,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_vacante_habilidad_requerida_1",
+          "sourceTableName": "habilidad_requerida",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 140,
+              "y": 625
+            },
+            {
+              "x": 140,
+              "y": 436
+            }
+          ],
+          "label": {
+            "x": 148,
+            "y": 635,
+            "width": 223,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_vacante_registra_1",
+          "sourceTableName": "registra",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 140,
+              "y": 276
+            },
+            {
+              "x": 140,
+              "y": 295
+            }
+          ],
+          "label": {
+            "x": 148,
+            "y": 266,
+            "width": 146,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_vacante_se_postula_1",
+          "sourceTableName": "se_postula",
+          "sourceSchemaName": "bd2_202215_28162752",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 255,
+              "y": 360
+            },
+            {
+              "x": 238,
+              "y": 360
+            }
+          ],
+          "label": {
+            "x": 271,
+            "y": 362,
+            "width": 166,
+            "height": 40,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}
