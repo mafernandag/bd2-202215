@@ -1,0 +1,10 @@
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('1', '10288', 2);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('1', '789012', 2);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('4', '10288', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('6', '123456', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('7', '123456', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('adm', '1', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('arq', '2', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('cont', '4', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('cont', '789012', 1);
+INSERT INTO `consulta_5`(`id_cargo`, `empresa`, `cantidad_ofertas`) VALUES ('inf', '3', 1);
