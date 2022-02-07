@@ -1,2 +1,3 @@
-ALTER TABLE se_postula
-ADD COLUMN expectativa_salarial FLOAT;
+ALTER TABLE candidato
+
+ADD COLUMN fecha_registro DATE AFTER telefono;
